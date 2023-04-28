@@ -1,0 +1,69 @@
+<!-- NAV BAR -->
+<!-- CRUD -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CRUD - Front</title>
+
+        <!-- IMPORT CSS -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="content">
+
+            <div class="header">
+                <b>crud</b>
+            </div>
+                <div class="in">
+                    <iframe src="https://giphy.com/embed/zOvBKUUEERdNm"
+                        width="250" height="auto" frameBorder="0" class="giphy-embed" allowFullScreen>
+                    </iframe>
+            </div>
+            
+
+            <div class="form">
+                        <input id="id" type="text" name="name" placeholder="Id" disabled=true>
+                        <input id="name" type="text" name="name" placeholder="Insira seu nome">
+                        <input id="favorite_color" type="text" name="favorite_color" placeholder="Insira sua cor favorita">
+                        <input id="address" type="text" placeholder="Insira seu endereço" name="address">
+                        <input id="email" type="email" placeholder="Insira seu email" name="email">
+                        <input id="pet_name" type="text" placeholder="Qual o nome do seu Pet?" name="pet_name">
+        
+                        <br>
+
+                        <div class="btns">
+                            <button id="update_btn" class="none" onclick="update()"></button>
+                            <button id='new_btn' onclick="create()">Criar</button>
+                        </div>
+                    </div>
+
+            </div>
+
+            <hr>
+
+            <!-- LISTAR ITENS EM TELA -->
+            <div class="header">
+                <div onclick="read()">
+                    <b>Usuários</b>
+                </div>
+            </div>
+
+
+            <div id="list-itens" class="tabela"></div>
+            
+        </div>
+
+        </div>
+    </body>
+
+    <script src="./script.js"></script>
+
+    <!-- IMPORT AXIOS -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+
+</html>
